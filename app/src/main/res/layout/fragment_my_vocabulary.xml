@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.vocabulary.VocabularyFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_vocabulary"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="132dp"
+            android:layout_marginBottom="16dp"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+            app:layout_constraintBottom_toTopOf="@+id/btn_learn_new_word"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/rv_item_my_vocabular" />
+
+        <TextView
+            android:id="@+id/tv_table_of_contents"
+            style="@style/TextViewVocabulary"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="52dp"
+
+            android:layout_marginEnd="32dp"
+            android:text="@string/my_vocabulary"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_learn_new_word"
+            style="@style/Style_Btn_Main"
+            android:layout_width="256dp"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_main_sharpe"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_white_r"
+            android:focusable="true"
+            android:paddingStart="0dp"
+            android:paddingEnd="28dp"
+            android:text="@string/learn_new_word"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

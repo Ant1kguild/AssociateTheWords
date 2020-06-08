@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Associate the words</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_login_fragment">Login fragment</string>
+    <string name="menu_vocabulary">My vocabulary fragment</string>
+    <string name="menu_word_details">Word details</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="settings">Settings</string>
+    <string name="association">Association</string>
+    <string name="words">Words</string>
+    <string name="my_vocabulary">My vocabulary</string>
+    <string name="learn_new_word">Learn new word</string>
+    <string name="add_association">Add association</string>
+    <string name="add_word">Add word</string>
+
+    <string name="btn_text_google_sig_in">Login with google</string>
+    <string name="btn_text_next">Next</string>
+    <string name="google_sig_out">Logout</string>
+
+    <string name="enter_a_word">Enter a word in English</string>
+    <string name="test_definition">Definition: Black birds having a raucous call</string>
+    <string name="test_example">Example: She crowed with joy</string>
+
+    <string name="help_text_loading">loading…</string>
+    <string name="associate_the_words">associate \n the words</string>
+    <string name="splash_title">əˈsəʊ.si.eɪt ðiː wɜːdz</string>
+    <string name="splash_subtitle">/associate the words/</string>
+    <string name="tutorial_provider_text">Would you like to see a tutorial about this page</string>
+    <string name="todo">TODO</string>
+    <string name="lighter_vocabulary_text_info">Here will be a dictionary of your words</string>
+    <string name="light_vocabulary_item_text_info">One of your words</string>
+    <string name="lighter_new_word_btn_text_info">Button to add new words to the dictionary</string>
+    <string name="light_vocabulary_item_click_text_info">Click to see details info</string>
+    <string name="lighter_new_word_btn_click_text_info">Click to add new word in vocabulary</string>
+
+
+</resources>

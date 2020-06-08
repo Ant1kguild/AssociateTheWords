@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.vocabulary.VocabularyFragment">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:padding="8dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_table_of_contents"
+            style="@style/TextViewVocabulary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="@string/add_word"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hasClearButton="true"
+            app:layout_constraintEnd_toEndOf="@+id/tv_table_of_contents"
+            app:layout_constraintStart_toStartOf="@+id/tv_table_of_contents"
+            app:layout_constraintTop_toBottomOf="@+id/tv_table_of_contents"
+            app:maxCharacters="40"
+            app:panelBackgroundColor="#FACE5D"
+            app:primaryColor="#FACE5D"
+            app:useDenseSpacing="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+                android:hint="@string/enter_a_word"
+                android:inputType="text"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/mainBackground"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_word_pronunciation"
+            style="@style/TextViewVocabulary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/iv_click_add_word"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfb"
+            tools:text="/dog/" />
+
+        <TextView
+            android:id="@+id/tv_word_translate"
+            style="@style/TextViewVocabulary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#80473E6A"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/iv_click_add_word"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_word_pronunciation"
+            tools:text="Собака" />
+
+        <ImageView
+            android:id="@+id/iv_click_add_word"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_add_48dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_word_translate"
+            app:layout_constraintEnd_toEndOf="@+id/tfb"
+            app:layout_constraintTop_toBottomOf="@+id/tfb" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tfb"
+            app:layout_constraintStart_toStartOf="@+id/tfb"
+            app:layout_constraintTop_toBottomOf="@+id/tv_word_translate"
+
+            tools:listitem="@layout/rv_item_word_apply" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

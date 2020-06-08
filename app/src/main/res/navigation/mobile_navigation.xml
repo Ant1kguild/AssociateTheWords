@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_add_word">
+
+    <fragment
+        android:id="@+id/nav_splash_screen"
+        android:name="com.words.association.ui.splash.SplashScreenFragment"
+        android:label="SplashScreenFragment"
+        tools:layout="@layout/fragment_splash_screen" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.words.association.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_vocabulary"
+        android:name="com.words.association.ui.vocabulary.VocabularyFragment"
+        android:label="@string/menu_login_fragment"
+        tools:layout="@layout/fragment_my_vocabulary">
+        <action
+            android:id="@+id/action_nav_vocabulary_to_nav_word_details"
+            app:destination="@id/nav_word_details" />
+        <action
+            android:id="@+id/action_nav_vocabulary_to_addWordFragment"
+            app:destination="@id/nav_add_word" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_word_details"
+        android:name="com.words.association.ui.word_details.WordDetailsFragment"
+        android:label="@string/menu_word_details"
+        tools:layout="@layout/fragment_word_details">
+        <argument
+            android:name="word"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_word_details_to_nav_vocabulary"
+            app:destination="@id/nav_vocabulary" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_word"
+        android:name="com.words.association.ui.add_word.AddWordFragment"
+        android:label="AddWordFragment"
+        tools:layout="@layout/fragment_add_word">
+        <action
+            android:id="@+id/action_nav_add_word_to_nav_word_details"
+            app:destination="@id/nav_word_details" />
+    </fragment>
+
+
+</navigation>

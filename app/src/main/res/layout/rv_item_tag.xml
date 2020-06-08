@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_tag_bg">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextWordDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#473E6A"
+            android:textSize="12sp"
+            tools:text="@string/add_association" />
+    </FrameLayout>
+</layout>
+
+
+

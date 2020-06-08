@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:title="@string/menu_login_fragment" />
+        <item
+            android:id="@+id/nav_vocabulary"
+            android:title="@string/menu_vocabulary" />
+
+        <item
+            android:id="@+id/nav_word_details"
+            android:title="@string/menu_word_details" />
+
+        <item
+            android:id="@+id/action_test_logout"
+            android:title="@string/google_sig_out" />
+    </group>
+</menu>

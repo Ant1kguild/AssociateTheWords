@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.word_details.WordDetailsFragment">
+
+
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:padding="8dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_current_word"
+            style="@style/TextViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_back"
+            tools:text="Crown" />
+
+        <TextView
+            android:id="@+id/tv_word_pronunciation"
+            style="@style/TextViewAdditionalInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_current_word"
+            tools:text="/kraʊn/" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_word_details"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="77dp"
+
+            android:clipToPadding="true"
+            android:padding="16dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/tv_word_pronunciation"
+            tools:layoutManager="GridLayoutManager"
+            tools:listitem="@layout/rv_item_word_details"
+            tools:spanCount="5" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/btn_translate"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:layout_marginBottom="9dp"
+
+            android:padding="12dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rv_word_details"
+            app:si_animation_duration="500"
+            app:si_disabled_alpha=".3"
+            app:si_disabled_color="#80473E6A"
+            app:si_enabled="false"
+            app:si_tint_color="#473E6A"
+            app:srcCompat="@drawable/ic_translate_black_24dp" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/btn_definition"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:layout_marginStart="24dp"
+
+            android:padding="12dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/btn_translate"
+            app:layout_constraintStart_toEndOf="@+id/btn_translate"
+            app:layout_constraintTop_toTopOf="@+id/btn_translate"
+            app:si_animation_duration="500"
+            app:si_disabled_alpha=".3"
+            app:si_disabled_color="#80473E6A"
+            app:si_enabled="false"
+            app:si_tint_color="#473E6A"
+            app:srcCompat="@drawable/ic_mode_comment_black_24dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,180 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="TextViewVocabulary" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textFontWeight" tools:targetApi="p">800</item>
+        <item name="android:textColor">#473E6A</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:maxLines">2</item>
+        <item name="fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="TextViewDetails" parent="TextViewVocabulary">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextTutorialProvider" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textFontWeight" tools:targetApi="p">800</item>
+        <item name="android:textColor">#473E6A</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="TextViewAdditionalInformation" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+        <item name="android:lineHeight" tools:targetApi="p">22dp</item>
+        <item name="android:textColor">#4D473E6A</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:maxLines">1</item>
+        <item name="fontFamily">@font/noto_sans</item>
+    </style>
+
+
+    <style name="TextMainRV" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#473E6A</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">45</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="TextTutorialInfo" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#99000000</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="TextTutorialButtonOk" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/ic_word_bg</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#473E6A</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="TextTutorialButtonCancel" parent="Widget.AppCompat.TextView">
+        <item name="android:padding">8dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#473E6A</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="TextAddWordRV" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#4D473E6A</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:fontFamily">@font/nokora_regular_400</item>
+    </style>
+
+    <style name="TextWordDetails" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#473E6A</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">45</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="FABtnVocabulary" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#FACE5D</item>
+    </style>
+
+    <style name="Theme_AC_TV_Vocabulary" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColorHint">#00BFA5</item>
+        <item name="android:hint">Add text</item>
+        <item name="colorControlNormal">#00BFA5</item>
+        <item name="colorControlHighlight">#6200EA</item>
+        <item name="colorControlActivated">#FACE5D</item>
+    </style>
+
+    <style name="Style_AC_TV_Vocabulary" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#473E6A</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">35</item>
+    </style>
+
+    <style name="Style_Btn_Main" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:lineHeight" tools:targetApi="p">22sp</item>
+
+    </style>
+
+
+    <style name="Style_bubble_translate" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#473E6A</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:fontFamily">@font/noto_sans</item>
+    </style>
+
+    <style name="Style_bubble_part_of_speech" parent="Style_bubble_translate">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

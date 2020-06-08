@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.daasuu.bl.BubbleLayout
+        android:id="@+id/bubble_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:paddingStart="14dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="10dp"
+
+        app:bl_arrowDirection="bottom"
+        app:bl_arrowHeight="8dp"
+        app:bl_arrowPosition="16dp"
+        app:bl_arrowWidth="8dp"
+        app:bl_cornersRadius="16dp"
+        app:bl_strokeColor="#4D473E6A"
+        app:bl_strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp2_definitions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:listitem="@layout/vp_item_word_definition">
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/worm_dots_indicator_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:dotsColor="@color/mainBackground"
+                app:dotsStrokeColor="@color/spotlightBackground"
+                app:dotsCornerRadius="4dp"
+                app:dotsSize="4dp"
+                app:dotsSpacing="2dp"
+                app:dotsStrokeWidth="2dp"
+
+                app:layout_constraintTop_toBottomOf="@+id/vp2_definitions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.daasuu.bl.BubbleLayout>
+</layout>
